@@ -1,0 +1,17 @@
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+
+# Google AI
+User-agent: Google-Extended
+Disallow: /
+
+# CommonCrawl
+User-agent: CCBot
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
