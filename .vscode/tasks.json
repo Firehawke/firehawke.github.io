@@ -1,0 +1,64 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Generate a blank post",
+			"type": "shell",
+			"command": "[string]$currentdate=Get-Date -Format 'yyMMdd';hugo new posts/$currentdate-untitled.md",
+			"group": "build",
+			"presentation": {
+				"reveal": "never",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Generate a blank database entry",
+			"type": "shell",
+			"command": "hugo new database/unnamed.md",
+			"group": "build",
+			"presentation": {
+				"reveal": "never",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Run hugo server",
+			"type": "shell",
+			"command": "hugo server -D",
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Build static pages",
+			"type": "shell",
+            "command": "hugo -d ..\\public",
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+        {
+			"label": "Deploy to firehawke.net",
+			"type": "shell",
+            "dependsOrder": "sequence",
+            "dependsOn": [ "Build static pages" ],
+            "command": "winscp.com /command 'open sftp://firehawke@www.firehawke.net/' 'synchronize remote -delete ..\\public /home/firehawke/firehawke.net' 'exit'",
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		}
+	]
+}
