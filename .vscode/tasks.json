@@ -35,30 +35,6 @@
 				"panel": "new"
 			},
 			"problemMatcher": []
-		},
-		{
-			"label": "Build static pages",
-			"type": "shell",
-            "command": "hugo -d ..\\public",
-			"group": "build",
-			"presentation": {
-				"reveal": "always",
-				"panel": "new"
-			},
-			"problemMatcher": []
-		},
-        {
-			"label": "Deploy to firehawke.net",
-			"type": "shell",
-            "dependsOrder": "sequence",
-            "dependsOn": [ "Build static pages" ],
-            "command": "winscp.com /command 'open sftp://firehawke@www.firehawke.net/' 'synchronize remote -delete ..\\public /home/firehawke/firehawke.net' 'exit'",
-			"group": "build",
-			"presentation": {
-				"reveal": "always",
-				"panel": "new"
-			},
-			"problemMatcher": []
 		}
 	]
 }
