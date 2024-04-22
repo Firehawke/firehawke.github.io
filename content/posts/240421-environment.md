@@ -40,7 +40,7 @@ Environment. That's it in a nutshell.
 
 By that point, I'd internalized that yelling and screaming figures of authority were somehow normal. When I'd moved to Arizona when I was six years old, I hadn't had a lot of experience with socializing as the place I'd lived before then had almost no children in general. Thus, of the first people I met the day I moved in, there were:
 
-* Patrick L, former marine, mental and physical abuser who yelled at his kids frequently, secret pedophile (yes, he was later arrested for molesting his own daughter and there is reason to believe he'd molested at least one other kid in the neighbor before that family moved away)
+* Patrick L, former marine, mental and physical abuser who yelled at his kids frequently, secret pedophile (yes, he was later arrested for molesting his own daughter and there is reason to believe he'd molested at least one other kid in the neighborhood before that family moved away)
 * Sean, son of Patrick, who was a model of Bart Simpson years and years before the Simpsons ever existed.
 * Chris, timid younger brother of Sean.
 * The daughter I'll leave out of this, a couple of years older than Sean and I.
